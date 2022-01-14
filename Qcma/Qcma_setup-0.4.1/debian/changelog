@@ -1,0 +1,196 @@
+qcma (0.4.2) unstable; urgency=low
+
+  * Fix on ffmpeg compilation
+
+ -- codestation <codestation404@gmail.com>  Wed, 26 Dec 2018 00:00:00 -0000
+
+qcma (0.4.1) unstable; urgency=low
+
+  * Do not reescan database automatically while transferring files.
+
+ -- codestation <codestation404@gmail.com>  Thu, 24 Nov 2016 00:00:00 -0000
+
+qcma (0.4.0) unstable; urgency=low
+
+  * Allow driver selection in components page.
+  * Make ffmpeg optional for macOS builds.
+  * Removed system tray plugins.
+  * Added button to save current listing to json.
+  * Inject version info into embedded xml and ignore local xml file by default.
+  * Added check for 3.60 update pup.
+  * Fix folder open button in backup manager.
+  * Implement automatic database refresh on root category listing.
+
+ -- codestation <codestation404@gmail.com>  Tue, 2 Nov 2016 00:00:00 -0000
+
+qcma (0.3.13) unstable; urgency=low
+
+  * Notify the user if an update check is being made.
+  * Bundle libusbK driver by default on windows installer.
+  * Fix build on openSUSE and OSX.
+  * Fix incomplete spanish translations.
+
+ -- codestation <codestation404@gmail.com>  Thu, 01 Sep 2016 00:00:00 -0000
+
+qcma (0.3.12) unstable; urgency=low
+
+  * Added support for host endianness.
+  * removed systray plugins compilation build on rpm, too unstable.
+
+ -- codestation <codestation404@gmail.com>  Sun, 24 Apr 2016 00:00:00 -0000
+
+qcma (0.3.11) unstable; urgency=low
+
+  * fixed compilation with newer ffmpeg.
+  * removed appindicator compilation build on debs, too unstable.
+
+ -- codestation <codestation404@gmail.com>  Sun, 18 Mar 2016 00:00:00 -0000
+
+qcma (0.3.10) unstable; urgency=low
+
+  * debian: switch to libvitamtp*
+  * Added manpages.
+  * Added french translation.
+  * Added systemd unit file for qcma_cli.
+  * Replaced dbus with unix signals.
+  * Show sorted game entries on Vita side.
+  * Fixed offline mode on vitas that connect to PSN from non-main countries.
+
+ -- codestation <codestation404@gmail.com>  Sun, 10 Jan 2016 00:00:00 -0000
+
+qcma (0.3.9) unstable; urgency=low
+
+  * Set correct organization name in qcma_cli.
+  * Fix for protocolMode "custom".
+  * Use updated avcodec function calls.
+
+ -- codestation <codestation404@gmail.com>  Sat, 28 Feb 2015 00:00:00 -0000
+
+qcma (0.3.8) unstable; urgency=low
+
+  * Fix broadcast in qcma_cli
+
+ -- codestation <codestation404@gmail.com>  Fri, 27 Feb 2015 00:00:00 -0000
+
+qcma (0.3.7) unstable; urgency=low
+
+  * Added pre 2.00 protocol versions to the config dialog.
+  * Fixed installation of appindicator plguin on standalone mode.
+  * Added support for Plasma 5 notifier.
+  * Use Qt5 by default.
+  * Fixed file downloader.
+  * Do no start broadcast received if wireless mode is disabled.
+
+ -- codestation <codestation404@gmail.com>  Fri, 23 Oct 2014 00:00:00 -0000
+
+qcma (0.3.6) unstable; urgency=low
+
+  * Fix stupid bug with function scope.
+
+ -- codestation <codestation404@gmail.com>  Thu, 11 Oct 2014 00:00:00 -0000
+
+qcma (0.3.5) unstable; urgency=low
+
+  * Added selector to override the default protocol version.
+  * Do not override the user provided protocol version with a default value.
+
+ -- codestation <codestation404@gmail.com>  Thu, 09 Oct 2014 00:00:00 -0000
+
+qcma (0.3.4) unstable; urgency=low
+
+  * Fixed compatibility with FW 3.30.
+  * Added setting to put a custom protocol version to avoid updates.
+  * Added notifications via libnotify on Linux.
+  * Added AppIndicator support for GNOME 3 and Unity.
+
+ -- codestation <codestation404@gmail.com>  Thu, 07 Oct 2014 00:00:00 -0000
+
+qcma (0.3.3) unstable; urgency=low
+
+  * Fixed wrong file sizes under windows.
+  * Fixed compilation with android toolchain.
+
+ -- codestation <codestation404@gmail.com>  Thu, 28 Jun 2014 00:00:00 -0000
+
+qcma (0.3.2) unstable; urgency=low
+
+  * Fixed bug with PSP savedata transfer.
+  * Fixed multimedia folder copy from pc.
+  * Added pkg support.
+  * Fixed about dialog.
+
+ -- codestation <codestation404@gmail.com>  Thu, 04 May 2014 00:00:00 -0000
+
+qcma (0.3.1) unstable; urgency=low
+
+  * Headless qcma version.
+  * Added dbus controls to qcma (Linux only)
+  * Set the default video codec to h264 if metadata skip is enabled.
+  * Delay the progress dialog by one second so it doesn't show on quick scans.
+  * Do not show the disconnect message if no connection is established.
+  * Show correct directory separators on Windows.
+  * Show if savedata, updates or dlc are present on backup manager.
+  * New database backend. Disabled for now.
+  * Added options to disable multimedia indexing.
+
+ -- codestation <codestation404@gmail.com>  Thu, 28 Mar 2014 00:00:00 -0000
+
+qcma (0.2.8) unstable; urgency=low
+
+  * Fixed bug where USB transfers couldn't be cancelled.
+  * Enabled item in Advanced settings dialog: "Skip metadata retrieval" (disabled by default).
+  * Enabled item in Advanced settings dialog: "Disable USB monitoring" (disabled by default).
+  * Enabled item in Advanced settings dialog: "Disable Wireless monitoring" (disabled by default).
+
+ -- codestation <codestation404@gmail.com>  Thu, 09 Jan 2014 00:00:00 -0000
+
+qcma (0.2.7) unstable; urgency=low
+
+  * Resolved problem when reading big files in PSP savedatas (like sending ISOS to the Vita).
+  * Resolved high memory usage when receiving files from PSP savedatas (like ISOS from TN-V).
+  * Fix crash on startup on some circunstances.
+  * Enabled item in Advanced settings dialog: "Offline mode" (enabled by default).
+
+ -- codestation <codestation404@gmail.com>  Sun, 05 Jan 2014 00:00:00 -0000
+
+qcma (0.2.6) unstable; urgency=low
+
+  * Show the account name on the info popup when the vita is connected (just like the official CMA).
+  * Fixed bug with multimedia browsing/streaming of content who has non-ascii characters on the filename.
+  * Picture scanning should be a little faster (use internal Qt library instead of ffmpeg for picture metadata extraction).
+  * KDE native notification support (only on Archlinux or builds from source code).
+  * Fixed bug with backup usage size when no items are detected.
+  * No more delay on Qcma exit if no devices are connected (will wait if a PS Vita is still connected).
+
+ -- codestation <codestation404@gmail.com>  Fri, 03 Jan 2014 00:00:00 -0000
+
+qcma (0.2.5) unstable; urgency=low
+
+  * Added filter for backup manager
+  * Fixed the PIN bug (negative numbers).
+  * Fixed bug related to creation of base folders for game backups.
+  * Show connection status in icon tray color.
+  * Show PSM icons in backup manager.
+  * Fixed bug with listing in backup manager.
+  * Fixed crash in PS Vita with some PSP savedatas.
+  * Avoid creation of folder with account id "ffffffffffffffff"
+
+ -- codestation <codestation404@gmail.com>  Sun, 22 Dec 2013 00:00:00 -0000
+
+qcma (0.2.4) unstable; urgency=low
+
+  * Support new CMA broadcast string on FW 3.00. Identify as PS Vita TV compatible.
+
+ -- codestation <codestation404@gmail.com>  Tue, 05 Nov 2013 00:00:00 -0000
+
+qcma (0.2.3) unstable; urgency=low
+
+  * Make sure that qcma uses statvfs64 on 32bit builds.
+
+ -- codestation <codestation404@gmail.com>  Sun, 06 Oct 2013 00:00:00 -0000
+
+qcma (0.2.2) unstable; urgency=low
+
+  * Initial release
+
+ -- codestation <codestation404@gmail.com>  Tue, 01 Oct 2013 00:00:00 -0000

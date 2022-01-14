@@ -1,0 +1,5 @@
+pkg2zip v1.8 Latest
+support PSP pkg file unpacking, including NeoGeo, Mini, Go, PC Engine pkg files
+unpack PSP pkg files to ISO or CSO
+better output with UTF-8 encoding on Windows for title names
+show unpacking progress in percents
